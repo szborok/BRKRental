@@ -4590,30 +4590,32 @@ input[type="button"].btn-block {
   display: block;
 }
 
+/* Transparent background for navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control transparency */
+  background-color: rgba(0, 0, 0, 0); /* Make the background fully transparent */
   padding: 10px;
-  position: relative; /* Required for positioning the overlay */
+  position: relative;
+  z-index: 1; /* Ensure the navbar stays on top of the overlay */
 }
 
+/* Text color for navbar links */
 .navbar a {
-  color: #fff; /* Use the same color code as h1 */
+  color: #ffffff; /* Set the color to white to match the header */
   margin: 0 10px;
   text-decoration: none;
 }
 
-.navbar::before {
-  content: '';
-  position: absolute;
+/* Black overlay */
+.overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black; /* Color of the overlay */
-  opacity: 0.5; /* Adjust the opacity to control darkness */
-  z-index: -1; /* Place the overlay behind the navbar content */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0; /* Ensure the overlay stays behind the navbar */
 }
 
 .logo {
