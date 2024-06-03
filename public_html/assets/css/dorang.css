@@ -4591,12 +4591,24 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  justify-content: space-between; /* This will push items to the edges */
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff; /* Use the same color code as h1 */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.name {
+  margin-right: 10px; /* Adds space between the logo and name */
 }
 
 .navbar .container {
