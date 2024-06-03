@@ -4591,20 +4591,14 @@ input[type="button"].btn-block {
 }
 
 /* Transparent background for navbar */
+/* Transparent background for navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0); /* Make the background fully transparent */
-  padding: 10px;
-  position: relative;
-  z-index: 1; /* Ensure the navbar stays on top of the overlay */
 }
 
 /* Text color for navbar links */
-.navbar a {
+.navbar-nav .nav-link {
   color: #ffffff; /* Set the color to white to match the header */
-  margin: 0 10px;
-  text-decoration: none;
 }
 
 /* Black overlay */
@@ -4616,14 +4610,6 @@ input[type="button"].btn-block {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   z-index: 0; /* Ensure the overlay stays behind the navbar */
-}
-
-.logo {
-  margin-right: auto; /* Pushes the logo to the left */
-}
-
-.name {
-  margin-right: 10px; /* Adds space between the logo and name */
 }
 
 .navbar .container {
