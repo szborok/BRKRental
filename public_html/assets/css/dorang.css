@@ -4625,7 +4625,6 @@ input[type="button"].btn-block {
           flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  margin-right: 50px;
   list-style: none;
 }
 
@@ -4634,8 +4633,8 @@ input[type="button"].btn-block {
   padding-left: 0;
 }
 
-.navbar-nav .nav-link:last-child {
-  margin-right: 0; /* Remove right margin for the last item */
+.navbar-nav .nav-link {
+  margin-right: 50px; 
 }
 
 .navbar-nav .dropdown-menu {
