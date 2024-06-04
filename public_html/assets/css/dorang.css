@@ -4491,6 +4491,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  margin-right: 30px;
 }
 
 .nav-tabs .nav-link {
@@ -11286,13 +11287,12 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
-  margin-right: 50px;
 }
 
 .page-navbar .nav-navbar .nav-link i {
   font-weight: bold;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 3px;
   position: relative;
   top: 1px;
   font-size: 14px;
