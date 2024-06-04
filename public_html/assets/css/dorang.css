@@ -4491,8 +4491,6 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .nav-tabs .nav-link {
@@ -4579,6 +4577,13 @@ input[type="button"].btn-block {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 20px; /* Add space between menu items */
+}
+.navbar-nav .nav-link:last-child {
+  margin-right: 0; /* Remove right margin for the last item */
 }
 
 .navbar > .container,
