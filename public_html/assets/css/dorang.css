@@ -4629,7 +4629,7 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
-.navbar-nav .nav-item {
+.navbar-nav .nav-item .nav-link {
   margin-right: 50px; /* Adjust the value as needed */
 }
 
