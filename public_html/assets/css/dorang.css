@@ -4628,8 +4628,9 @@ input[type="button"].btn-block {
 }
 
 .navbar-nav .nav-link {
-  padding-right: 50;
+  padding-right: 0;
   padding-left: 0;
+  margin-right: 20px;
 }
 
 .navbar-nav .nav-link:last-child {
