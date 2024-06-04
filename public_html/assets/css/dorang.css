@@ -11270,7 +11270,6 @@ a:hover {
   -webkit-flex-basis: 0;
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
-  margin-right: 50px;
 }
 
 .page-navbar .nav-navbar .nav-link {
@@ -11287,12 +11286,13 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+  margin-right: 50px;
 }
 
 .page-navbar .nav-navbar .nav-link i {
   font-weight: bold;
   display: inline-block;
-  margin-right: 3px;
+  margin-right: 30px;
   position: relative;
   top: 1px;
   font-size: 14px;
