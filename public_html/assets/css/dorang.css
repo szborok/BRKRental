@@ -4629,10 +4629,6 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
-.navbar-nav .nav-item .nav-link {
-  margin-right: 50px; /* Adjust the value as needed */
-}
-
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
