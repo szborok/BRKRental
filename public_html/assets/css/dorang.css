@@ -5006,7 +5006,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 .navbar-dark .navbar-brand {
@@ -11270,6 +11270,7 @@ a:hover {
   -webkit-flex-basis: 0;
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
+  margin-right: 50px;
 }
 
 .page-navbar .nav-navbar .nav-link {
