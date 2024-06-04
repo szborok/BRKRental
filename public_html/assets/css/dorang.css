@@ -4638,7 +4638,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-nav .nav-link {
-  margin-right: 50px; 
+  margin-right: 30px; 
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-right: 0px; 
 }
 
 .navbar-nav .dropdown-menu {
