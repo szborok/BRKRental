@@ -4625,13 +4625,13 @@ input[type="button"].btn-block {
           flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
+  margin-right: 50px;
   list-style: none;
 }
 
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
-  margin-right: 20px;
 }
 
 .navbar-nav .nav-link:last-child {
