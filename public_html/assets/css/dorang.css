@@ -4579,13 +4579,6 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
 }
 
-.navbar-nav .nav-link {
-  margin-right: 20px; /* Add space between menu items */
-}
-.navbar-nav .nav-link:last-child {
-  margin-right: 0; /* Remove right margin for the last item */
-}
-
 .navbar > .container,
 .navbar > .container-fluid {
   display: -webkit-box;
@@ -4637,6 +4630,11 @@ input[type="button"].btn-block {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  margin-right: 50px;
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-right: 0; /* Remove right margin for the last item */
 }
 
 .navbar-nav .dropdown-menu {
