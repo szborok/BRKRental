@@ -4473,6 +4473,7 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  margin-right: 50px;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4491,7 +4492,6 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
-  margin-right: 30px;
 }
 
 .nav-tabs .nav-link {
