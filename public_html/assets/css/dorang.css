@@ -11226,7 +11226,6 @@ a:hover {
 
 /* page navbar */
 .page-navbar {
-  z-index: 999;
   position: fixed;
   width: 100%;
   top: 0;
@@ -11234,7 +11233,7 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 110px;
+  height: 56px;
   -webkit-transition: all, 0.5s;
   transition: all, 0.5s;
 }
