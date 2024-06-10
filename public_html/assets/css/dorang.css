@@ -11519,6 +11519,7 @@ a:hover {
   text-align: center;
   color: #fff;
   background-image: url(../imgs/header.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center 56px;
   -webkit-transition: .2s;
