@@ -7646,10 +7646,6 @@ button.bg-dark:focus {
           flex-direction: row !important;
 }
 
-.row-spacing {
-  margin-bottom: 8rem; /* Adjust this value as needed */
-}
-
 .flex-column {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
@@ -9001,6 +8997,11 @@ button.bg-dark:focus {
 .mb-5,
 .my-5 {
   margin-bottom: 3rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 6rem !important;
 }
 
 .ml-5,
