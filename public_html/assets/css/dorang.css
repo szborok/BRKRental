@@ -11798,5 +11798,5 @@ body.light-theme .contact-section .footer .links a {
 }
 
 body.dark-theme {
-  background-image: url(../imgs/header.jpg);
+  background: #212529;
 }
