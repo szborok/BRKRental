@@ -11526,7 +11526,7 @@ a:hover {
   color: #fff;
   background-image: url(../imgs/header.jpg);
   background-size: cover;
-  background-position: bottom 90%;
+  background-position: bottom;
   -webkit-transition: .2s;
   transition: .2s;
   -webkit-transition-timing-function: linear;
