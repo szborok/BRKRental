@@ -11809,10 +11809,6 @@ body.dark-theme {
   margin-bottom: 30px;
 }
 
-.pricing-card:hover {
-  transform: scale(1.05);
-}
-
 .pricing-card .card-title {
   font-size: 1.5rem;
   color: #333;
