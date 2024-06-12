@@ -11940,7 +11940,7 @@ hr {
   padding-bottom: 2rem; /* Consistent bottom padding */
 }
 
-.motorcycle-row hr {
+.motorcycle-row-hr {
   border-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
   margin: 20px 0; /* Spacing above and below the horizontal rule */
 }
