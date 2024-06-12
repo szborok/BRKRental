@@ -11802,11 +11802,12 @@ body.dark-theme {
 }
 
 .pricing-card {
+  background: #f8f9fa;
   border: none;
-  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-bottom: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  margin-bottom: 30px;
 }
 
 .pricing-card:hover {
@@ -11818,44 +11819,38 @@ body.dark-theme {
   color: #333;
 }
 
+.pricing-card .bike-name {
+  font-size: 1.2rem;
+  color: #555;
+}
+
 .pricing-card .card-price {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #333;
-  margin-left: 15px 0;
-  margin-right: 15px 0;
-  margin-top: 15px 0;
-  margin-bottom: 5px 0;
+  margin: 5px 0;
 }
 
 .pricing-card .period {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #777;
 }
 
 .pricing-card .save-amount {
-  font-size: 1rem;
-  color: #28a745;
+  font-size: 0.9rem;
 }
 
-.pricing-card ul {
-  padding: 0;
-  margin: 20px 0;
+.text-success {
+  color: #28a745 !important;
 }
 
-.pricing-card ul li {
-  font-size: 1rem;
-  color: #555;
+.text-muted {
+  color: #6c757d !important;
 }
 
-.pricing-card .btn {
-  background-color: #333;
-  border: none;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-transform: uppercase;
+.bike-pricing {
+  margin-bottom: 20px;
 }
 
-.pricing-card .btn:hover {
-  background-color: #555;
+hr-gpt {
+  border-color: rgba(0, 0, 0, 0.1);
 }
