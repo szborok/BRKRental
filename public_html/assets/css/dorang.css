@@ -11936,11 +11936,20 @@ hr {
 }
 
 .motorcycle-row {
-  padding-top: 2rem; /* Consistent top padding */
-  padding-bottom: 2rem; /* Consistent bottom padding */
+  padding-bottom: 4rem; /* Assuming this is the main row class for motorcycles */
+  padding-top: 4rem; /* Same padding top and bottom for consistency */
 }
 
-hr {
-  border-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
-  margin: 20px 0; /* Spacing above and below the horizontal rule */
+.motorcycle-row > div {
+  padding-left: 15px;  /* Padding for columns */
+  padding-right: 15px; /* Same padding for columns */
 }
+
+.full-width-hr {
+  width: calc(100% + 30px); /* Adjust based on the container's padding */
+  margin-left: -15px; /* Negative margin to offset the container's padding */
+  margin-right: -15px; /* Negative margin to offset the container's padding */
+  border: 1px solid #000; /* Customize the color and style of the hr */
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
