@@ -11801,9 +11801,25 @@ body.dark-theme {
   background: #212529;
 }
 
-.pricing-card {
+.pricing-card-bronz {
   border: none;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(205, 127, 50, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.pricing-card-silver {
+  border: none;
+  background: rgba(192, 192, 192, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.pricing-card-silver {
+  border: none;
+  background: rgba(255, 215, 0, 0.8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   margin-bottom: 30px;
