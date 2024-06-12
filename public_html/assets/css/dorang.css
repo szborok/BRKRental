@@ -11806,12 +11806,6 @@ body {
   color: #fff;
 }
 
-
-body {
-  background-color: #1b1b1b;
-  color: #fff;
-}
-
 .pricing-card {
   position: relative;
   background: linear-gradient(to bottom right, #0a0a23, #24244d); /* Dark Navy Gradient */
@@ -11821,6 +11815,10 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pricing-card:hover {
@@ -11876,6 +11874,12 @@ body {
 
 hr {
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+.padding-hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 
