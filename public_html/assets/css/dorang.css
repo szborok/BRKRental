@@ -11821,6 +11821,42 @@ body {
   align-items: center;
 }
 
+.bronze-card {
+  background: linear-gradient(135deg, #cd7f32 0%, #a56b2a 100%);
+  color: #fff;
+}
+
+.silver-card {
+  background: linear-gradient(135deg, #c0c0c0 0%, #808080 100%);
+  color: #000;
+}
+
+.gold-card {
+  background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%);
+  color: #000;
+}
+
+/* Optionally add some padding, border-radius, and box-shadow for better aesthetics */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Ensure text contrast is sufficient */
+.bronze-card .card-title,
+.silver-card .card-title,
+.gold-card .card-title {
+  color: inherit;
+}
+
+.bronze-card .card-text,
+.silver-card .card-text,
+.gold-card .card-text {
+  color: inherit;
+}
+
+
 .pricing-card:hover {
   transform: scale(1.05);
 }
