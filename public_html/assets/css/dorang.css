@@ -5080,19 +5080,14 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-.card > hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 /* General styling for pricing cards */
 .pricing-card {
   display: flex;
   flex-direction: column;
-  background-color: #fff; /* Default background color */
+  background-color: #e6e6e6; /* Default background color */
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 0rem;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -5100,8 +5095,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem; /* Example font size */
   font-weight: bold;
   color: #333;
-  margin-bottom: 1rem; /* Optional: Adjust spacing between title and price */
-  margin-top: 1rem; /* Optional: Adjust spacing between title and price */
+  margin-bottom: 10px; /* Optional: Adjust spacing between title and price */
   text-align: center; /* Center align the title */
 }
 
@@ -5114,7 +5108,7 @@ input[type="button"].btn-block {
 .pricing-card .period {
   font-size: 0.875rem; /* Example font size */
   color: #666;
-  margin-top: 0; /* Push period to the bottom */
+  margin-top: auto; /* Push period to the bottom */
   text-align: center; /* Center align the period */
 }
 
@@ -5131,24 +5125,48 @@ input[type="button"].btn-block {
   background-color: #ffd700; /* Gold card background color */
 }
 
+.save-amount {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 /* Optional: Remove border for all pricing cards */
 .pricing-card {
   border: none;
 }
 
-.pricing-card .hr{
-  border: none;
+.price-container {
+  position: relative;
+  text-align: center;
+  height: fit-content;
 }
 
-.pricing-card p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.bike-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem; /* Adjust as needed */
+  color: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+  z-index: 1;
+  pointer-events: none;
 }
 
+.card-price {
+  position: relative;
+  font-size: 1.5rem; /* Keep existing styles */
+  color: #333; /* Keep existing styles */
+  z-index: 2;
+}
+
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 .card > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
@@ -5165,7 +5183,7 @@ input[type="button"].btn-block {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 0rem;
+  padding: 1.25rem;
 }
 
 .card-title {
@@ -11084,6 +11102,34 @@ a:hover {
   opacity: .5;
 }
 
+/* card */
+.card {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.card .card-img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.card .card-body {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.card .card-subtitle {
+  font-size: 13px;
+  opacity: .8;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.card .card-title {
+  font-size: calc(17px + (22 - 17) * ((100vw - 300px) / (1300 - 300)));
+  margin-bottom: 15px;
+}
+
 /* img overlay */
 .overlay-img {
   display: block;
@@ -11837,6 +11883,7 @@ body.light-theme .contact-section .footer .links a {
 body.dark-theme {
   background: #212529;
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
