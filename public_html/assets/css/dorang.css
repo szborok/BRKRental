@@ -5101,6 +5101,7 @@ input[type="button"].btn-block {
   font-weight: bold;
   color: #333;
   margin-bottom: 1rem; /* Optional: Adjust spacing between title and price */
+  margin-top: 1rem; /* Optional: Adjust spacing between title and price */
   text-align: center; /* Center align the title */
 }
 
