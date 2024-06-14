@@ -5144,6 +5144,8 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 
