@@ -5140,12 +5140,13 @@ input[type="button"].btn-block {
   border: none;
 }
 
-.pricing-card .p {
+.pricing-card p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 
