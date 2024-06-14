@@ -5089,7 +5089,7 @@ input[type="button"].btn-block {
 .pricing-card {
   display: flex;
   flex-direction: column;
-  background-color: #e6e6e6; /* Default background color */
+  background-color: #fff; /* Default background color */
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 0rem;
