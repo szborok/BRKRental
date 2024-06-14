@@ -5092,7 +5092,7 @@ input[type="button"].btn-block {
   background-color: #e6e6e6; /* Default background color */
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
