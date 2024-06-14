@@ -5524,6 +5524,8 @@ input[type="button"].btn-block {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .pricing-card hr {
@@ -5562,27 +5564,35 @@ input[type="button"].btn-block {
   /* Center align the period */
 }
 
-/* Specific styles for each pricing card variant */
 .bronze-card {
-  background-color: #e6b790;
-  /* Bronze card background color */
+  background: linear-gradient(145deg, #cd7f32, #d89a56);
+  border: 1px solid #b87333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .silver-card {
-  background-color: #d6d6d6;
-  /* Silver card background color */
+  background: linear-gradient(145deg, #c0c0c0, #d1d1d1);
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000;
 }
 
 .gold-card {
-  background-color: #ffd700;
-  /* Gold card background color */
+  background: linear-gradient(145deg, #ffd700, #ffec8b);
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .save-amount {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0;
   margin-top: 15px;
 }
@@ -5594,34 +5604,43 @@ input[type="button"].btn-block {
 
 .price-container {
   position: relative;
-  text-align: end;
-  height: 2rem;
-  align-content: end;
+  text-align: center;
+  height: 2rem; /* Maintain the original height */
+  align-content: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.bike-name {
+.bike-name-container {
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.5);
-  z-index: 1;
-  pointer-events: none;
-  width: 100%;
+  top: 50%; /* Center vertically */
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: calc(100% - 0px); /* Subtracting 20px for margin on both sides */
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.bike-name {
+  font-size: 1.75rem; /* Adjust font size to fit within the container */
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  pointer-events: none;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  transform: scaleY(1.5);
+  filter: blur(0.8px);
+  transform: scaleY(1.5); /* Adjust the scale factor as needed */
 }
+
+
+
 
 .card-price {
   position: relative;
