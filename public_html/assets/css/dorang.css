@@ -11817,7 +11817,7 @@ body.dark-theme {
   font-size: 1.25rem; /* Example font size */
   font-weight: bold;
   color: #333;
-  margin-bottom: 10px; /* Optional: Adjust spacing between title and price */
+  margin-bottom: 0px; /* Optional: Adjust spacing between title and price */
   text-align: center; /* Center align the title */
 }
 
@@ -11849,6 +11849,10 @@ body.dark-theme {
 
 /* Optional: Remove border for all pricing cards */
 .pricing-card {
+  border: none;
+}
+
+.pricing-card .hr{
   border: none;
 }
 
