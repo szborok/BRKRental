@@ -12995,12 +12995,7 @@ body.dark-theme {
 }
 
 .padding-hr {
-  width: 100%;
-  /* Adjust based on the container's padding */
-  margin-left: 15px;
-  /* Negative margin to offset the container's padding */
-  margin-right: 15px;
-  /* Negative margin to offset the container's padding */
+  width: 95%;
   border: 1px solid #000;
   /* Customize the color and style of the hr */
   border-color: rgba(255, 255, 255, 0.1);
