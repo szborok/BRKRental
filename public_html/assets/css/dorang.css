@@ -12767,7 +12767,7 @@ body {
 
 /* Conatct section */
 .contact-section {
-  z-index: 990;
+  z-index: 1;
   position: relative;
   text-align: center;
   color: #fff;
@@ -12776,6 +12776,11 @@ body {
   background-position: bottom;
   margin-top: -20rem;
   padding-top: 20rem;
+}
+
+#how-to-rent, #faq {
+  position: relative;
+  z-index: 2; /* Ensure they are above the contact section if needed */
 }
 
 .contact-section .overlay {
