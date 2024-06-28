@@ -2101,12 +2101,12 @@ pre code {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0px solid #dee2e6;
 }
 
 .table tbody tr
 {
-  border-top: 2px solid #dee2e6;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .table tbody+tbody {
