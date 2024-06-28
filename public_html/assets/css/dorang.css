@@ -2107,7 +2107,6 @@ pre code {
 .table thead th {
   vertical-align: bottom;
   border-bottom: 0px solid #dee2e6;
-  border-top: 0px;
 }
 
 .table tbody+tbody {
