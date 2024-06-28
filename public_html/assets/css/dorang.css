@@ -2098,12 +2098,6 @@ pre code {
   border-top: 1px solid #dee2e6;
 }
 
-.table th:first-child,
-.table td:first-child{
-  padding: 0.75rem;
-  vertical-align: middle;
-}
-
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
