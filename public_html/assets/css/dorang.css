@@ -13071,11 +13071,11 @@ body.dark-theme {
   /* Blur effect */
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   /* Add padding inside the card */
   padding-bottom: 1.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   height: 100%;
 }
 
