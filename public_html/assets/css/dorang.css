@@ -2109,6 +2109,12 @@ pre code {
   border-bottom: 0px solid #dee2e6;
 }
 
+.table thead tr {
+  vertical-align: bottom;
+  border-bottom: 0px solid #dee2e6;
+  border-top: 0px;
+}
+
 .table tbody+tbody {
   border-top: 2px solid #dee2e6;
 }
