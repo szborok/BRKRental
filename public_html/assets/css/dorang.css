@@ -12792,7 +12792,7 @@ body {
   padding-top: 20rem;
 }
 
-#how-to-rent, #faq {
+#how-to-rent, #faq , #about-us{
   position: relative;
   z-index: 2; /* Ensure they are above the contact section if needed */
 }
