@@ -1,0 +1,4 @@
+<button class="btn btn-theme-color modal-toggle">
+<i class="ti-control-play text-danger"></i> 
+Watch Video
+</button>
