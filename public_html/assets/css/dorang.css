@@ -12999,13 +12999,6 @@ body.dark-theme {
   }
 }
 
-.motorcycle-row {
-  padding-bottom: 4rem;
-  /* Assuming this is the main row class for motorcycles */
-  padding-top: 4rem;
-  /* Same padding top and bottom for consistency */
-}
-
 .motorcycle-row>div {
   padding-left: 15px;
   /* Padding for columns */
