@@ -6849,35 +6849,33 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* The Modal (background) */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 0; /* Remove padding to center the modal vertically */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Modal Content */
 .modal-content {
-  position: relative;
-  background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 90vh; /* Ensure content fits within the viewport height */
+  display: block;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 700px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh; /* Set a max height for images */
+  object-fit: contain; /* Make sure the images do not stretch */
 }
 
 
@@ -6914,7 +6912,7 @@ img.hover-shadow {
   margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -6925,6 +6923,14 @@ img.hover-shadow {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  padding-right: 3rem;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  padding-left: 3rem;
 }
 
 /* On hover, add a black background color with a little bit see-through */
