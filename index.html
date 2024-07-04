@@ -108,9 +108,9 @@
             <div class="container">
                 <div class="row pb-4 pt-4 align-items-center">
                     <div class="col-12 col-lg-4 mb-4">
-                        <img src="/public_html/assets/imgs/Motor/Kawasaki_Z800_1.png"
-                            onclick="openModal();currentSlide(1)" alt="Kawasaki Z800 Performance Edition"
-                            class="img-fluid">
+                        <img src="/public_html/assets/imgs/Motor/KawasakiZ800/Kawasaki_Z800_1.png"
+                            alt="Kawasaki Z800 Performance Edition"
+                            onclick="openModal('myModal1')" class="img-fluid">
                     </div>
                     <div class="col-12 col-lg-4 mb-4 pl-lg-5 pr-lg-5 text-left">
                         <h4 class="mb-2">Kawasaki Z800 Performance Edition</h4>
@@ -138,8 +138,8 @@
             <div class="container">
                 <div class="row pb-4 pt-4 align-items-center">
                     <div class="col-12 col-md-4 mb-4 pl-md-5 pr-md-5">
-                        <img src="/public_html/assets/imgs/Motor/YAMAHA_XJR1200_1.png" alt="Yamaha XJR1200"
-                            class="img-fluid">
+                        <img src="/public_html/assets/imgs/Motor/YamahaXJR1200/YAMAHA_XJR1200_1.png" alt="Yamaha XJR1200"
+                        onclick="openModal('myModal2')" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-4 mb-4 pl-md-5 pr-md-5 text-left">
                         <h4 class="mb-2">Yamaha XJR1200</h4>
@@ -166,8 +166,8 @@
             <div class="container">
                 <div class="row pb-4 pt-4 align-items-center">
                     <div class="col-12 col-md-4 mb-4 pl-md-5 pr-md-5">
-                        <img src="/public_html/assets/imgs/Motor/Suzuki_GSF650_1.png" alt="Suzuki GSF650 Bandit K5"
-                            class="img-fluid">
+                        <img src="/public_html/assets/imgs/Motor/SuzukiGSF650/Suzuki_GSF650_1.png" alt="Suzuki GSF650 Bandit K5"
+                        onclick="openModal('myModal3')" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-4 mb-4 pl-md-5 pr-md-5 text-left">
                         <h4 class="mb-2">Suzuki GSF650 Bandit K5</h4>
@@ -194,8 +194,8 @@
             <div class="container">
                 <div class="row pb-4 pt-4 align-items-center">
                     <div class="col-12 col-md-4 mb-4 pl-md-5 pr-md-5">
-                        <img src="/public_html/assets/imgs/Motor/YAMAHA_XVS650.png" alt="YAMAHA XVS650"
-                            class="img-fluid">
+                        <img src="/public_html/assets/imgs/Motor/YamahaXSV650/YAMAHA_XVS650_1.png" alt="YAMAHA XVS650"
+                        onclick="openModal('myModal4')" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-4 mb-4 pl-md-5 pr-md-5 text-left">
                         <h4 class="mb-2">YAMAHA V-Star650</h4>
@@ -232,7 +232,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-4 mb-4">
-                        <img src="/public_html/assets/imgs/Bike/CUBE_2.png" alt="CUBE Reaction Hybrid Performance 500"
+                        <img src="/public_html/assets/imgs/Bike/CUBE_1.png" alt="CUBE Reaction Hybrid Performance 500"
                             class="img-fluid">
                     </div>
                     <div class="col-12 col-lg-4 mb-4 pl-lg-5 pr-lg-5 text-left">
@@ -835,42 +835,123 @@
         <!-- Footer -->
 
         <!-- The Modal/Lightbox -->
-        <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div id="myModal1" class="modal">
+            <span class="close cursor" onclick="closeModal('myModal1')">&times;</span>
             <div class="modal-content">
 
                 <div class="mySlides">
-                    <img src="/public_html/assets/imgs/Motor/Kawasaki_Z800_1.png">
+                    <img src="/public_html/assets/imgs/Motor/KawasakiZ800/Kawasaki_Z800_1.png">
                 </div>
 
                 <div class="mySlides">
-                    <img class="" src="/public_html/assets/imgs/Motor/Kawasaki_Z800_2.jpg">
+                    <img src="/public_html/assets/imgs/Motor/KawasakiZ800/Kawasaki_Z800_2.jpg">
                 </div>
 
                 <div class="mySlides">
-                    <img class="" src="/public_html/assets/imgs/Motor/Kawasaki_Z800_3.jpg">
+                    <img src="/public_html/assets/imgs/Motor/KawasakiZ800/Kawasaki_Z800_3.jpg">
                 </div>
 
                 <div class="mySlides">
-                    <img class="" src="/public_html/assets/imgs/Motor/Kawasaki_Z800_4.jpg">
+                    <img src="/public_html/assets/imgs/Motor/KawasakiZ800/Kawasaki_Z800_4.jpg">
                 </div>
 
                 <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides('myModal1', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('myModal1', 1)">&#10095;</a>
 
             </div>
+        </div>
 
+        <div id="myModal2" class="modal">
+            <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
+            <div class="modal-content">
 
-            <!-- core  -->
-            <script src="/public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
-            <script src="/public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXJR1200/YAMAHA_XJR1200_1.png">
+                </div>
 
-            <!-- bootstrap affix -->
-            <script src="/public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXJR1200/YAMAHA_XJR1200_2.jpg">
+                </div>
 
-            <!-- Dorang js -->
-            <script src="/public_html/assets/js/dorang.js"></script>
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXJR1200/YAMAHA_XJR1200_3.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXJR1200/YAMAHA_XJR1200_4.jpg">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides('myModal2', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('myModal2', 1)">&#10095;</a>
+
+            </div>
+        </div>
+
+        <div id="myModal3" class="modal">
+            <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/SuzukiGSF650/Suzuki_GSF650_1.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/SuzukiGSF650/Suzuki_GSF650_2.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/SuzukiGSF650/Suzuki_GSF650_3.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/SuzukiGSF650/Suzuki_GSF650_4.jpg">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides('myModal3', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('myModal3', 1)">&#10095;</a>
+
+            </div>
+        </div>
+
+        <div id="myModal4" class="modal">
+            <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXSV650/YAMAHA_XVS650_1.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXSV650/YAMAHA_XVS650_2.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXSV650/YAMAHA_XVS650_3.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="/public_html/assets/imgs/Motor/YamahaXSV650/YAMAHA_XVS650_4.jpg">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides('myModal4', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('myModal4', 1)">&#10095;</a>
+
+            </div>
+        </div>
+
+        <!-- core  -->
+        <script src="/public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="/public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+        <!-- bootstrap affix -->
+        <script src="/public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+        <!-- Dorang js -->
+        <script src="/public_html/assets/js/dorang.js"></script>
 
 </body>
 

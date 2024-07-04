@@ -14,3 +14,7 @@ Credits:
 		JQuery: 			(https://www.jquery.com)
 		Bootstrap: 			(https://www.getbootstrap.com) 
 		animate.css:		(http://daneden.me/animate) 
+
+
+main website pictures size is 300x255 png
+galrey pic, size does not matter

@@ -12,83 +12,106 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
- // toggle 
-$(document).ready(function(){
-    
-    $('.search-toggle').click(function(){
-        $('.search-wrapper').toggleClass('show');
-    });
+// toggle 
+$(document).ready(function () {
 
-    $('.modal-toggle').click(function(){
-        $('.modalBox').toggleClass('show');
-    })
+  $('.search-toggle').click(function () {
+    $('.search-wrapper').toggleClass('show');
+  });
 
-    $('.modalBox').click(function(){
-        $(this).removeClass('show');
-    });
+  $('.modal-toggle').click(function () {
+    $('.modalBox').toggleClass('show');
+  })
 
-    $('.spinner').click(function(){
-        $(".theme-selector").toggleClass('show');
-    });
-    $('.light').click(function(){
-        $('body').addClass('light-theme');
-        $('body').removeClass('dark-theme');
-    });
-    $('.dark').click(function(){
-        $('body').toggleClass('dark-theme');
-        $('body').removeClass('light-theme');
-    });
+  $('.modalBox').click(function () {
+    $(this).removeClass('show');
+  });
+
+  $('.spinner').click(function () {
+    $(".theme-selector").toggleClass('show');
+  });
+  $('.light').click(function () {
+    $('body').addClass('light-theme');
+    $('body').removeClass('dark-theme');
+  });
+  $('.dark').click(function () {
+    $('body').toggleClass('dark-theme');
+    $('body').removeClass('light-theme');
+  });
 });
 
 
 
 // smooth scroll
-$(document).ready(function(){
-    $(".navbar .nav-link").on('click', function(event) {
+$(document).ready(function () {
+  $(".navbar .nav-link").on('click', function (event) {
 
-        if (this.hash !== "") {
+    if (this.hash !== "") {
 
-            event.preventDefault();
+      event.preventDefault();
 
-            var hash = this.hash;
+      var hash = this.hash;
 
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 700, function(){
-                window.location.hash = hash;
-            });
-        } 
-    });
-}); 
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 700, function () {
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 
 
-function openModal() {
-  document.getElementById('myModal').style.display = "flex";
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "flex";
+  document.body.classList.add('modal-open'); // Disable scrolling
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+  document.body.classList.remove('modal-open'); // Enable scrolling
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(modalId, n) {
+  showSlides(modalId, slideIndex[modalId] += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(modalId, n) {
+  showSlides(modalId, slideIndex[modalId] = n);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+let slideIndex = {
+  myModal1: 1,
+  myModal2: 1,
+  myModal3: 1,
+  myModal4: 1,
+};
+
+function showSlides(modalId, n) {
+  let i;
+  let modal = document.getElementById(modalId);
+  let slides = modal.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+    slideIndex[modalId] = 1;
   }
-  slides[slideIndex-1].style.display = "block";
+  if (n < 1) {
+    slideIndex[modalId] = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex[modalId] - 1].style.display = "flex";
 }
+
+// Initialize slides for each modal
+document.addEventListener("DOMContentLoaded", function () {
+  showSlides('myModal1', slideIndex['myModal1']);
+  showSlides('myModal2', slideIndex['myModal2']);
+  showSlides('myModal3', slideIndex['myModal3']);
+  showSlides('myModal4', slideIndex['myModal4']);
+});
 

@@ -6857,7 +6857,7 @@ img.hover-shadow {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; /* Prevent background scrolling */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   justify-content: center;
@@ -6877,7 +6877,6 @@ img.hover-shadow {
   max-height: 90vh; /* Set a max height for images */
   object-fit: contain; /* Make sure the images do not stretch */
 }
-
 
 /* The Close Button */
 .close {
@@ -6926,10 +6925,10 @@ img.hover-shadow {
   padding-right: 3rem;
 }
 
-/* Position the "next button" to the right */
+/* Position the "prev button" to the left */
 .prev {
   left: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px 3px 0 0;
   padding-left: 3rem;
 }
 
@@ -6956,17 +6955,16 @@ img.hover-shadow {
   color: white;
 }
 
-
-.modal-open {
+/* Disable scrolling on body when modal is open */
+body.modal-open {
   overflow: hidden;
 }
 
+/* Additional styles to ensure the modal behaves correctly */
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
-
-
 
 .modal-dialog {
   position: relative;
@@ -7060,8 +7058,6 @@ img.hover-shadow {
 .modal-dialog-centered.modal-dialog-scrollable::before {
   content: none;
 }
-
-
 
 .modal-backdrop {
   position: fixed;
