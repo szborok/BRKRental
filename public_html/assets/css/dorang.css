@@ -646,6 +646,18 @@ pre code {
   height: 30px; /* Adjust as needed */
 }
 
+.language-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-left: 5px; /* Adds margin to the left of each icon */
+}
+.language-icon:hover {
+  transform: scale(1.1);
+}
+/* Ensure the first icon doesn't have extra left margin */
+.language-icon:first-child {
+  margin-left: 0;
+}
 
 .container-fluid {
   width: 100%;

@@ -120,3 +120,28 @@ document.addEventListener("DOMContentLoaded", function () {
   showSlides('myModal4', slideIndex['myModal4']);
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  function loadLanguage(language) {
+    fetch(`/public_html/assets/lang/${language}.json`)
+      .then(response => response.json())
+      .then(data => {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (data[key]) {
+            element.textContent = data[key];
+          }
+        });
+      });
+  }
+
+  window.changeLanguage = function (language) {
+    localStorage.setItem('selectedLanguage', language);
+    loadLanguage(language);
+  }
+
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+  loadLanguage(savedLanguage);
+});
+
+
