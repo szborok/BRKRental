@@ -86,6 +86,11 @@ let slideIndex = {
   myModal2: 1,
   myModal3: 1,
   myModal4: 1,
+  myModal5: 1,
+  myModal6: 1,
+  myModal7: 1,
+  myModal8: 1,
+  myModal9: 1,
 };
 
 function showSlides(modalId, n) {

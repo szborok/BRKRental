@@ -621,6 +621,32 @@ pre code {
   }
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  display: block;
+}
+
+.icon {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: transparent; /* Optional: add background for better visibility */
+  padding: 5px; /* Optional: add padding for better appearance */
+  border-radius: 50%; /* Optional: make the icon round */
+}
+
+.icon img {
+  width: 30px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+}
+
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
